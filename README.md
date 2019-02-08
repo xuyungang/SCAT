@@ -1,20 +1,22 @@
 # SCAT
 A novel tool package for single-cell RNA sequencing analysis with graph theory and deep networks. It consits of two-step analysis:
 
-## 1. ReadsImpute: Accurate quantification of transcript for scRNA-seq with read imputation. 
+## 1. ReadsImpute
+### Accurate quantification of transcript for scRNA-seq with read imputation. 
 Refer to https://github.com/xuyungang/readsImpute for source code and manual.
 
-## 2. scIGANs:recover drop-out events in scRNA-seq using Generative Adversarial Networks (GANs) 
+## 2. scIGANs
+### recover drop-out events in scRNA-seq using Generative Adversarial Networks (GANs) 
 
-### (1) train a GAN:
+#### (1) train a GAN:
 
-python scIGANs.py [options] --file_d *matrix.csv* --file_c *cluster.csv* --train
+`python scIGANs.py [options] --file_d *matrix.csv* --file_c *cluster.csv* --train`
 
-### (2) impute expression matrix
+#### (2) impute expression matrix
 
-python scIGNAs.py [options] --impute
+`python scIGNAs.py [options] --impute`
 
-### Options
+#### Options
 - `--train` **required** for training, run the tool to train the network
 - `--impute`  **required** for imputing, run the tool to do imputation
 - `--file_d <matrix.csv>`  **required** for training, type=string, the expression matrix file with path
