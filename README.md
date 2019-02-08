@@ -16,7 +16,7 @@ Refer to https://github.com/xuyungang/readsImpute for source code and manual.
 
 `python scIGNAs.py [options] <--impute>`
 
-#### Options
+##### Options
 - `--train` **required** for training, run the tool to train the network
 - `--impute`  **required** for imputing, run the tool to do imputation
 - `--file_d <matrix.csv>`  **required** for training, type=string, the expression matrix file with path
