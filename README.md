@@ -10,11 +10,11 @@ Refer to https://github.com/xuyungang/readsImpute for source code and manual.
 
 #### (1) train a GAN:
 
-`python scIGANs.py [options] --file_d *matrix.csv* --file_c *cluster.csv* --train`
+`python scIGANs.py [options] <--file_d matrix.csv> <--file_c cluster.csv> <--train>`
 
 #### (2) impute expression matrix
 
-`python scIGNAs.py [options] --impute`
+`python scIGNAs.py [options] <--impute>`
 
 #### Options
 - `--train` **required** for training, run the tool to train the network
