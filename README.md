@@ -17,8 +17,8 @@ python scIGNAs.py [options] --impute
 ### Options
 - `--train` **required** for training, run the tool to train the network
 - `--impute`  **required** for imputing, run the tool to do imputation
-- `--file_d`  **required** for training, type=string, the expression matrix file with path, default='sample/d_yg124.csv'
-- `--file_c`  **required** for training, type=string, the cluster label file with path, default='d_yg124_c5.csv'
+- `--file_d <matrix.csv>`  **required** for training, type=string, the expression matrix file with path
+- `--file_c <cluster.csv>`  **required** for training, type=string, the cluster label file with path
 - `--n_epochs` optional, type=int, number of epochs of training, default=200
 - `--batch_size` optional, type=int, default=64, help='size of the batches'
 - `--kt` optional, type=float, default=0, help='kt parameters'
